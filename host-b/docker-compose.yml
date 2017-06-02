@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+
+    host:
+        build: docker
+        cap_add:
+            - NET_ADMIN
+            - NET_BROADCAST
+
+networks:
+
+    default:
+        external:
+            name: ha-container-network

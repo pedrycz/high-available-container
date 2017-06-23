@@ -3,6 +3,7 @@ version: '2'
 services:
 
     host:
+        container_name: host-a
         build: docker
         cap_add:
             - NET_ADMIN
